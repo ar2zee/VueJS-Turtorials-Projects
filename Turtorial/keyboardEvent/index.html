@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue JS</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<!-- <div id="vue-app">
+		<h1>Keyboard Events</h1>
+		<label>Name: </label>
+		<input type="text" v-on:keyup.enter="logName">
+		<label>Age: </label>
+		<input type="text" v-on:keyup.alt.enter="logAge">
+	</div>  -->
+
+	<div id="vue-app">
+		<h1>Keyboard Events</h1>
+		<label>Name: </label>
+		<input type="text" v-model="name">
+		<span>{{name}}</span>
+		<label>Age: </label>
+		<input type="text" v-model="age">
+		<span>{{age}}</span>
+	</div> 
+
+	<script src="app.js"></script>
+</body>
+</html>

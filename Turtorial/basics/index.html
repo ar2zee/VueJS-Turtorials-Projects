@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vue JS</title>
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div id="vue-app">
+		<h1>{{greet('Artur')}}</h1>
+		<p>Name: {{name}}</p>
+		<p>Job: {{job}}</p>
+
+		<a v-bind:href='website'>Link</a>   
+		<a :href='website'>Link</a> 
+
+		<input type="text" v-bind:value="value">  
+		<input type="text" :value="value">  
+		
+		<p v-html="websiteTag"></p>
+
+	</div>
+
+
+	<script src="app.js"></script>
+</body>
+</html>
